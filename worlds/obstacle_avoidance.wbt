@@ -5,13 +5,13 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
-EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/rocks/protos/Rock.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.26343553758594845 0.2640968343894172 0.9278224935850021 1.6431515815142506
-  position 0.13088333584928286 -1.9481513111833213 1.0599910709986948
+  orientation -0.4096679091656663 0.4005536781106394 0.8195907241738827 1.7904643866195775
+  position -0.18583423175632513 -1.5734933260460244 1.707865525012348
   follow "e-puck"
   followType "Pan and Tilt Shot"
 }
@@ -39,16 +39,6 @@ E-puck {
     }
   ]
 }
-WoodenBox {
-  translation 0.16 0 0.05
-  name "wooden box(1)"
-  size 0.1 0.1 0.1
-}
-WoodenBox {
-  translation -0.03 -0.13 0.05
-  name "wooden box(2)"
-  size 0.1 0.1 0.1
-}
 Solid {
   translation -0.209 -0.249 0.001
   children [
@@ -67,4 +57,23 @@ Solid {
       }
     }
   ]
+}
+Rock {
+  translation 0.16 0 0.05
+}
+Rock {
+  translation 0.23 -0.26 0.05
+  name "rock(2)"
+}
+Rock {
+  translation -0.3 0.28 0.05
+  name "rock(3)"
+}
+Rock {
+  translation -0.3 -0.09 0.05
+  name "rock(4)"
+}
+Rock {
+  translation -0.03 -0.13 0.05
+  name "rock(1)"
 }
