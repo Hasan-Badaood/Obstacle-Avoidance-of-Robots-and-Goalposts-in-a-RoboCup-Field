@@ -1,0 +1,70 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/factory/containers/protos/WoodenBox.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.26343553758594845 0.2640968343894172 0.9278224935850021 1.6431515815142506
+  position 0.13088333584928286 -1.9481513111833213 1.0599910709986948
+  follow "e-puck"
+  followType "Pan and Tilt Shot"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 1 0 0 4.692820414042842e-06
+  floorSize 0.8 0.8
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallHeight 0.15
+}
+E-puck {
+  translation 0.319854 0.178341 -6.29544e-05
+  rotation -3.7436799999583397e-06 2.8707599999680536e-06 -0.9999999999888718 -1.3089953071795861
+  controller "MyController"
+  supervisor TRUE
+  turretSlot [
+    Compass {
+    }
+    GPS {
+    }
+  ]
+}
+WoodenBox {
+  translation 0.16 0 0.05
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation -0.03 -0.13 0.05
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+Solid {
+  translation -0.209 -0.249 0.001
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+        texture ImageTexture {
+          url [
+            "./mark.png"
+          ]
+        }
+      }
+      geometry Plane {
+        size 0.1 0.1
+      }
+    }
+  ]
+}
