@@ -29,8 +29,8 @@ E-puck wheeled robot (Webots R2025a)
 #### Goal Reached
 ![Goal Reached](screenshots/Simulation_Ending_Point.png)
 
-#### Video Demo
-https://github.com/Hasan-Badaood/Obstacle-Avoidance-of-Robots-and-Goalposts-in-a-RoboCup-Field/raw/main/screenshots/obstacle_avoidance_vid.mp4
+### Video Demo
+![Obstacle Avoidance Demo](screenshots/obstacle_avoidance_vid.gif)
 
 ### Project Structure
 - `worlds/` - Webots simulation world file
